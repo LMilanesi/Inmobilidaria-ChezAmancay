@@ -1,0 +1,403 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*----> Layout header y footer <----*/
+
+.header,
+.footer {
+	display: flex;
+	justify-content: space-between;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.header {
+	height: 17vw;
+	max-height: 150px;
+}
+
+.footer {
+	justify-content: space-evenly;
+	height: 150px;
+	flex-direction: column;
+}
+
+.header .header__logo,
+.footer .footer__logo {
+	padding: 15px;
+	justify-items: center;
+}
+
+.header .header__logo img,
+.footer .footer__logo img {
+	width: 100%;
+	max-width: 200px;
+}
+
+.header .header__menu ul {
+	display: flex;
+	list-style: none;
+}
+
+.header .header__menu li {
+	margin: 0 0.5vw;
+}
+
+.header .header__menu li {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 2.5vw;
+}
+
+@media screen and (min-width: 720px) {
+	.header .header__menu li {
+		font-size: 22px;
+	}
+
+	.footer {
+		flex-direction: row;
+	}
+}
+
+/* Estilos header y footer */
+
+.header {
+	background-color: yellow
+}
+
+.footer {
+	background-color: darkblue;
+	height: 300px;
+}
+
+.footer h3 {
+	color: white;
+}
+
+/* Page Staff */
+
+/*section staff layout*/
+
+.section-staff img {
+	/*imagenes tipo perfil*/
+	width: 200px;
+	height: 350px;
+	margin: 10px auto;
+}
+
+.section-staff {
+	display: grid;
+	grid-template-columns: 10% 1fr 10%;
+	grid-template-rows: repeat(1, auto);
+	background-color: darkcyan;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	gap: 10px;
+}
+
+.section-staff h1 {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	margin: 30px auto;
+}
+
+.section-staff .lautaro {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.section-staff .amancay {
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+.section-staff .renzo {
+	grid-column: 2/3;
+	grid-row: 4/5;
+}
+
+.section-staff .tano {
+	grid-column: 2/3;
+	grid-row: 5/6;
+}
+
+@media screen and (min-width: 720px) {
+
+	.section-staff {
+		display: grid;
+		grid-template-columns: 10% 1fr 1fr 10%;
+		grid-template-rows: repeat(1, auto);
+	}
+
+	.section-staff h1 {
+		grid-column: 2/4;
+		grid-row: 1/2;
+		margin: 30px auto;
+	}
+
+	.section-staff .lautaro {
+		grid-column: 2/3;
+		grid-row: 2/3;
+	}
+
+	.section-staff .amancay {
+		grid-column: 3/4;
+		grid-row: 2/3;
+	}
+
+	.section-staff .renzo {
+		grid-column: 2/3;
+		grid-row: 3/4;
+	}
+
+	.section-staff .tano {
+		grid-column: 3/4;
+		grid-row: 3/4;
+	}
+}
+
+/* centrado */
+.section-staff article {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.section-staff p {
+	max-width: 600px;
+	text-align: center;
+	padding: 0 10px;
+}
+
+/*Page Index*/
+
+/*Grid*/
+
+.main {
+	display: grid;
+	grid-template-columns: 10% 1fr 10%;
+	grid-template-rows: repeat(1, auto);
+	background-color: darkcyan;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	gap: 10px;
+}
+
+.sectionAboutUs {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+.sectionComparativa {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+
+
+.sectionComparativa h1,.sectionAboutUs p, .sectionAboutUs h1 { /*centrado titulos*/
+text-align: center;
+}
+
+/*Estilos tabla*/
+
+.tableComparativa {
+	font-size: 12px;
+	color: #333333;
+	width: 100%;
+	border-width: 1px;
+	border-color: #729ea5;
+	border-collapse: collapse;
+	margin: 10px auto;
+}
+
+.tableComparativa th {
+	font-size: 12px;
+	background-color: #acc8cc;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #729ea5;
+	text-align: left;
+}
+
+.tableComparativa tr {
+	background-color: #ffffff;
+}
+
+.tableComparativa td {
+	font-size: 12px;
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #729ea5;
+}
+
+.tableComparativa tr:hover {
+	background-color: #ffff99;
+}
+
+/*PAGE SERVICIOS*/
+/*Grid*/
+
+.div--backgroundcolor {
+	background-color: darkcyan;
+}
+
+.section-servicios {
+	display: grid;
+	grid-template-columns: 10% 1fr 10%;
+	grid-template-rows: repeat(1, auto);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	gap: 10px;
+}
+
+.section-servicios h1 {
+	grid-column: 2/3;
+	grid-row: 1/2;
+	text-align: center;
+}
+
+.section-servicios .administracion {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+.section-servicios .asesoria {
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+@media screen and (min-width: 1200px) {
+
+	.section-servicios {
+		grid-template-columns: 10% 1fr 1fr 10%;
+	}
+
+	.section-servicios .asesoria {
+		grid-column: 3/4;
+		grid-row: 2/3;
+	}
+
+	.section-servicios h1 {
+		grid-column: 2/4;
+		grid-row: 1/2;
+
+	}
+}
+
+/*Estilos de lista*/
+
+.section-servicios article {
+	padding-top: 20px ;
+}
+
+.section-servicios li {
+	margin-left: 5%;
+}
+
+.section-servicios ul{
+	margin-top: 15px;
+}
+
+.section-servicios ul>ul>li{
+	margin-left: 7%;
+}
+
+/*PAGE LOCACIONES*/
+/*Grid*/
+.section-locaciones {
+	display: grid;
+	grid-template-columns: 10% 1fr 10%;
+	grid-template-rows: repeat(1, auto);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	gap: 10px;
+	background-color: darkcyan;
+}
+
+.section-locaciones .propiedad1 {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+.section-locaciones .propiedad2 {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+/*centrado*/
+
+.section-locaciones h1, .section-locaciones p {
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.section-locaciones iframe {
+	width: 100%;
+	border: none;
+}
+
+/*PAGE CONTACTO*/
+
+.contacto--grid {
+	display: grid;
+	grid-template-columns: 10% 1fr 10%;
+	grid-template-rows: repeat(1, auto);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	gap: 10px;
+	background-color: darkcyan;
+}
+
+.contacto--grid .section-contacto {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+
+.contacto--grid .section-mapa {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+
+@media screen and (min-width: 720px) {
+	
+	.contacto--grid {
+	grid-template-columns: 10% 1fr 1fr 10%;
+	}
+
+	.contacto--grid .section-mapa {
+		grid-column: 3/4;
+		grid-row: 1/2;
+	
+}
+}
+
+/*centrado*/
+.section-mapa iframe {
+	width: 100%;
+}
+
+.contacto--centrado h1, .contacto--centrado h2, .contacto--centrado h3{
+	text-align: center;
+}
+
+.qds--centrado div{
+padding-left: 5vw;
+}

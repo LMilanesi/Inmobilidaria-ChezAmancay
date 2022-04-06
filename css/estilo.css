@@ -1,0 +1,258 @@
+/*ESTILOS GENERALES*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: rgb(0, 83, 7)
+}
+
+html {
+	font-size: 60%;
+}
+
+.img-logonav {
+height: 150px;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: solid 3px red;
+}
+
+nav {
+	position: relative;
+	bottom: 70px;
+	left: 500px;
+	background-color: yellow;
+	position: sticky;
+	top: 0px;
+}
+
+.nav-barra ul {
+	list-style: none;
+	font-size: 0;
+	padding-left: 8%;
+}
+
+.nav-barra li {
+	list-style-type: none;
+	display: inline-block;
+	width: 20%;
+	position: relative;
+	font-size: 3rem;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	margin-bottom: 5px;
+}
+
+.nav-barra {
+	background-color: yellow;
+	text-align: center;
+}
+
+footer {
+	font-size: large;
+	color: white;
+	text-align: center;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	padding-top: 15px;
+	font-weight: 500;
+	background-color: blue;
+}
+
+
+/* PAGE INDEX */
+
+#aboutus {
+	background-image: url(../assets/img/header5.jpg);
+	background-position: center;
+	background-size: auto;
+	height: 300px;
+}
+
+#aboutus p,
+#aboutus h1 {
+	font-size: large;
+	color: white;
+	text-align: center;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	padding-top: 30px;
+	font-weight: 500;
+}
+#aboutus p {
+padding: 0 40px;
+}
+
+#comparativa table,
+#comparativa h1 {
+	font-size: large;
+	color: white;
+	text-align: center;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-weight: 500;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+
+#comparativa h1 {
+	border-style: solid;
+	margin: 15px 45%;
+}
+
+#comparativa table {
+margin-bottom: 20px;
+}
+
+
+
+/* PAGE LOCACIONES */
+
+.section-locaciones {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.section-locaciones h1 {
+	color: white;
+	font-size: 300%;
+	padding-top: 10px;
+}
+
+.section-locaciones p {
+	color: white;
+	padding: 10px;
+	font-size: 150%;
+}
+
+
+
+/* PAGE SERVICIOS */
+
+.section-servicios {
+	margin: 30px 50px;
+	color: white;
+	font-size: 200%;
+}
+
+.section-servicios article {
+	padding-top: 20px ;
+}
+
+.section-servicios h1 {
+	font-size: 300%;
+	color: red;
+}
+
+.section-servicios h2 {
+	color: yellow;
+}
+
+.section-servicios li {
+	margin-left: 5%;
+}
+
+.section-servicios ul{
+	margin-top: 15px;
+}
+
+.section-servicios ul>ul>li{
+	margin-left: 7%;
+}
+
+/*PAGE STAFF*/
+
+.section-staff{
+	text-align: center;
+	height: 800px;
+
+}
+
+.amancay {
+	position: absolute; 
+	top: 250px;
+	left: 25%;
+}
+
+.lautaro {
+	position: absolute;
+	top: 250px;
+	left: 50%;
+}
+
+.section-staff h1 {
+	color: white;
+	font-size: 200%;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.section-staff img {
+	width: 300px;
+	height: 400px;
+}
+
+.section-staff p {
+	width: 250px;
+	margin: 15px auto;
+	color: wheat;
+	font-size: 150%;
+}
+
+
+
+/*PAGE CONTACTO*/
+
+.section-contacto {
+color: white;
+font-size: 150%;
+text-align: center;
+}
+
+.section-contacto h1,.section-contacto h2 {
+color: white;
+font-size: 200%;
+margin: 15px 0;
+}
+
+.section-contacto label {
+	color: white;
+	font-size: 200%;
+}
+
+.section-contacto input {
+margin-left: 20px;
+}
+
+.label-email {
+	margin-left: 22px;
+}
+
+.section-contacto textarea {
+	height: 100px;
+    width: 40%;
+}
+
+.list-servicios {
+	margin: 0px 0px 25px 0px;
+}
+
+.section-mapa{
+	text-align: center;
+	color: wheat;
+	background-color: seagreen;
+	margin: 20px 0;
+	padding: 20px 0;
+}
+
+.section-mapa p {
+	margin-left: 40%;
+	margin-right: 40%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.section-mapa h1{
+margin: 10px 0;
+}
