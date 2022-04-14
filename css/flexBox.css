@@ -401,8 +401,3 @@ text-align: center;
 .qds--centrado div{
 padding-left: 5vw;
 }
-
-a:hover{
-	background-color: rgba(243, 163, 5, 0.98);
-transition-delay: 0.2s;
-padding: 10px;}
